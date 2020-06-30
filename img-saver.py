@@ -7,6 +7,6 @@ from urllib.request import urlopen
 # 총페이지가 20페이지 일경우 아래의 코드는 for i in range(1,21): 이다
 for i in range(1,PAGE수를_+1_한_값을_여기_적는다):
     # 이미지 열기
-    im = Image.open(urlopen(위_주석_6_의 결과물을 여기에 붙여넣는다.))
+    im = Image.open(urlopen(README파일_주석_6_의 결과물을 여기에 붙여넣는다.))
     # 이미지 저장
     im.save('{0}.png'.format(i))
