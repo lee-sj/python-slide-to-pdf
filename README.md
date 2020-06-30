@@ -1,6 +1,16 @@
-# python-image-save
-한국외국어대학교 온라인강의 강의자료 저장하기
+# python-slide-to-pdf
+한국외국어대학교 온라인강의 강의자료 pdf 만들기  
 
+## 순서 
+강의자료 > 이미지로 저장 (img-saver)  
+이미지 > pdf 변환 (img2pdf)
+
+## img-saver
+한국외국어대학교 온라인강의 강의자료 이미지로 저장하기
+
+``` shell
+$ pip install pillow
+```
 ### 이미지 URL 확인
 1. eclass 온라인 강의에 접속한다.  
 2. 왼쪽하단부 Slide e-Book을 선택한다. 
@@ -13,4 +23,20 @@
 7. 파이썬 파일의 주석을 확인하고 페이지 수 설정과 6번의 결과물을 알맞는 곳에 붙여넣기한다. 
 
 ### 파일 실행 - 이미지 생성
-8. python img-saver.py 로 해당 파일을 실행한다. 
+8. img-saver.py 파일을 실행한다. 
+``` shell
+$ python img-saver.py
+```
+
+## img2pdf
+강의자료 이미지를 묶어서 pdf로 변환하기
+
+### python 파일 수정
+1. img-saver와 같이 페이지 수를 설정한다. 
+2. 만들고자 하는 pdf 파일의 파일명얼 수정한다. 
+
+### 파일실행 - pdf 생성
+3. img2pdf.py 파일을 실행한다. 
+``` shell
+$ python img2pdf.py
+```
